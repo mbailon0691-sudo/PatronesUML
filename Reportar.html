@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <h1>Reporte de Incidentes</h1>
+    <p>Registro de fallos en la infraestructura tecnológica</p>
+</header>
+<nav>
+     <ul>
+        <li><a href="Index.html">Inicio</a></li>
+        <li><a href="Reportar.html">Reportar Incidente</a></li>
+        <li><a href="Tickets.html">Ver Tickets</a></li>
+    </ul>
+</nav>
+
+<main>
+     <section>
+        <article>
+            <h2>Formulario de Registro</h2>
+            <form>
+                <p>
+                    <label for="titulo">Título del incidente:</label><br>
+                    <input type="text" id="titulo" name="titulo">
+                </p>
+                <p>
+                    <label for="categoria">Categoría:</label><br>
+
+                    <select id="categoria" name="categoria">
+
+                        <option value="">Seleccione una categoría</option>
+                        <option value="red">Red</option>
+                        <option value="hardware">Hardware</option>
+                        <option value="software">Software</option>
+
+                    </select>
+                </p>
+                <p>
+                    Prioridad:
+                </p>
+                    <input type="radio" id="alta" name="prioridad" value="alta">
+                    <label for="alta">Alta</label>
+
+                    <input type="radio" id="media" name="prioridad" value="media">
+                    <label for="media">Media</label>
+
+                    <input type="radio" id="baja" name="prioridad" value="baja">
+                    <label for="baja">Baja</label>
+                <p>
+                    <label for="descripcion">
+                        Descripción del incidente:
+                    </label><br>
+                    <textarea
+                        id="descripcion"
+                        name="descripcion"
+                        rows="5"
+                        cols="40">
+                    </textarea>
+                </p>
+                <p>
+                    <button type="submit">
+                        Enviar Incidente
+                    </button>
+                </p>
+            </form>              
+        </article>
+    </section>
+</main>
+<footer>
+     <p>P.Help Desk - 2026</p>
+</footer>
+</body>
+</html>
