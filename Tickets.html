@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Registro de Tickets</title>
 </head>
 <body>
     <header>
@@ -15,15 +16,14 @@
         <ul>
             <li><a href="Index.html">Inicio</a></li>
             <li><a href="Reportar.html">Reportar Incidente</a></li>
-            <li><a href="Tickets.html">Ver Tickets</a></li>
         </ul>
     </nav>
 
-    <main>
-        <section>
+    <main class="deshboard">
+        <section class="card">
             <article>
                 <h2>Tickets Registrados</h2>
-                <table border="1">
+                <table>
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -39,21 +39,33 @@
                             <td>001</td>
                             <td>Servidor principal fuera de servicio</td>
                             <td>Hardware</td>
-                            <td>Alta</td>
+                            <td>
+                                <span class="badge badge-high">
+                                    Alta
+                                </span>
+                            </td>
                             <td>Abierto</td>
                         </tr>
                         <tr>
                             <td>002</td>
                             <td>Falla de conexión a Internet</td>
                             <td>Red</td>
-                            <td>Media</td>
+                            <td>
+                                <span class="badge badge-medium">
+                                    Media
+                                </span>
+                            </td>
                             <td>En proceso</td>
                         </tr>
                         <tr>
                             <td>003</td>
                             <td>Error en aplicación de monitoreo</td>
                             <td>Software</td>
-                            <td>Baja</td>
+                            <td>
+                                <span class="badge badge-low">
+                                    Baja
+                                </span>
+                            </td>
                             <td>Resuelto</td>
                         </tr>
                     </tbody>
