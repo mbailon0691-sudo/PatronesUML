@@ -1,0 +1,16 @@
+{
+  "name": "p.helpdesk-backend",
+  "version": "1.0.0",
+  "description": "Backend del sistema Hepl Desk",
+  "license": "ISC",
+  "author": "MBailón",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.8.1"
+  }
+}
