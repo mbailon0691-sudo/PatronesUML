@@ -1,7 +1,9 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors");
 const Ticket = require("./models/Ticket");
 const app = express();
+app.use(cors());
 app.use(express.json());
 const PORT = 3000;
 mongoose.connect("mongodb://localhost:27017/helpdesk")
