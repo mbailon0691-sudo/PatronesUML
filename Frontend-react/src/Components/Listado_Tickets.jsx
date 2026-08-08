@@ -2,14 +2,14 @@ import {useState, useEffect} from "react";
 function Listado_Tickets() {
     const [tickets, setTickets] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:3000/tickets")
+        fetch(`${import.meta.env.VITE_API_URL}/tickets`)
             .then(response => response.json())
             .then(data => {
             setTickets(data);
         });
     }, []);
     const EliminarTicket = (id) => {
-        fetch(`http://localhost:3000/tickets/${id}`,{
+        fetch(`${import.meta.env.VITE_API_URL}/tickets/${id}`,{
             method: "DELETE"
         })
         .then(response => response.json())
@@ -21,7 +21,7 @@ function Listado_Tickets() {
         });
     };
     const ActualizarEstado = (id, nuevoEstado) => {
-        fetch(`http://localhost:3000/tickets/${id}`,{
+        fetch(`${import.meta.env.VITE_API_URL}/tickets/${id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"

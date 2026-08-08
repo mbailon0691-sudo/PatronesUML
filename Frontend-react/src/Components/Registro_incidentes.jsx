@@ -10,7 +10,7 @@ function Registro_Incidentes() {
             alert("Necesita completar todos los campos.");
             return;
         }
-        fetch("http://localhost:3000/tickets", {
+        fetch(`${import.meta.env.VITE_API_URL}/tickets`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
